@@ -20,7 +20,7 @@ def load_data(input_dir=None):
         <https://s3.amazonaws.com/mit-dai-ballet/ames/DataDocumentation.txt >
     """
     if input_dir is not None:
-        tables = config.get('tables')
+        tables = config.get('data.tables')
 
         entities_table_name = config.get('data.entities_table_name')
         entities_config = one_or_raise(
@@ -54,7 +54,7 @@ def make_train_test_split(output_dir, seed=641137):
     y_te_df = y.loc[inds_te]
 
     # load config
-    tables = config.get('tables')
+    tables = config.get('data.tables')
     entities_table_name = config.get('data.entities_table_name')
     entities_config = one_or_raise(
         fy.lwhere(tables, name=entities_table_name))
