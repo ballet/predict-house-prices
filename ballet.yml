@@ -1,5 +1,5 @@
 default:
-  version: 0.6.2
+  version: 0.6.5
   project:
     project_name: Predict House Prices
     project_slug: ballet-predict-house-prices
