@@ -7,7 +7,7 @@ import click
 from ballet.eng.misc import IdentityTransformer
 from ballet.pipeline import FeatureEngineeringPipeline
 from ballet.util.io import save_features, save_targets
-from ballet.util.log import stacklog
+from stacklog import stacklog
 
 import ballet_predict_house_prices
 from ballet_predict_house_prices.load_data import load_data
