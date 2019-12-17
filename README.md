@@ -24,7 +24,7 @@ rejected at random --- isn't that fun!
 You can load the raw data as follows:
 
 ```
-from ballet_predict_housing_prices.load_data import load_data
+from ballet_predict_house_prices.load_data import load_data
 X_df, y_df = load_data()
 ```
 
