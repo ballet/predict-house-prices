@@ -2,34 +2,39 @@
 
 # Predict House Prices
 
-This is a collaborative predictive modeling project built on the [ballet 
-framework](https://github.com/HDI-Project/ballet). The goal of this project 
+This is a collaborative predictive modeling project built on the [ballet
+framework](https://github.com/HDI-Project/ballet). The goal of this project
 is to build a feature engineering pipeline that will be used to predict house
  prices for houses in the [Ames dataset](http://jse.amstat.org/v19n3/decock.pdf).
- 
+
 ## Join the collaboration
- 
+
 Are you interested in joining the collaboration? In the open-source spirit,
-anyone with an internet connection can contribute features to the 
-collaboration. In this demonstration project, features will be accepted or 
-rejected at random --- isn't that fun!
+anyone with an internet connection can contribute features to the
+collaboration. In this demonstration project, every feature that is
+well-formed will be accepted and no features will be pruned. (In a practical
+deployment, Ballet uses a streaming feature selection algorithm to accept
+only feature that provide an information gain above some threshold, and to
+prune older features that have been made redundant by newer ones.)
 
 - Read the [Ballet Contributor Guide](https://hdi-project.github.io/ballet/contributor_guide.html)
 - Look at example features (`examples/`)
-- Browse the currently accepted features in the contributed features 
+- Browse the currently accepted features in the contributed features
     directory (`src/ballet_predict_house_prices/features/contrib`)
-    
-## Explore the data
+
+## Quickstart
+
+### Explore the data
 
 You can load the raw data as follows:
 
-```
+```python
 from ballet_predict_house_prices.load_data import load_data
 X_df, y_df = load_data()
 ```
 
 The resulting variables are pandas DataFrames.
-```
+```python
 X_df.head()
 ```
 
@@ -42,3 +47,19 @@ X_df.head()
 |       5 | 527105010 |            60 | RL          |             74 |      13830 | Pave     |     nan | IR1         | Lvl            | AllPub      | Inside       | Gtl          | Gilbert        | Norm          | Norm          | 1Fam        | 2Story        |              5 |              5 |         1997 |             1998 | Gable        | CompShg     | VinylSd        | VinylSd        | None           |              0 | TA           | TA           | PConc        | Gd          | TA          | No              | GLQ              |            791 | Unf              |              0 |           137 |             928 | GasA      | Gd           | Y             | SBrkr        |          928 |          701 |                 0 |          1629 |                0 |                0 |           2 |           1 |               3 |               1 | TA             |               6 | Typ          |            1 | TA             | Attchd        |            1997 | Fin             |             2 |           482 | TA            | TA            | Y             |            212 |              34 |                0 |            0 |              0 |           0 |       nan | MnPrv   | nan            |          0 |         3 |      2010 | WD          | Normal           |
 
 For a detailed data dictionary, see [here](https://s3.amazonaws.com/mit-dai-ballet/ames/DataDocumentation.txt).
+
+### Run the existing pipeline
+
+You can see the feature values that are extracted by the existing feature
+engineering pipeline:
+
+```python
+from ballet_predict_house_prices.features import build
+result = build(X_df, y_df)
+X_train, y_train = result['X'], result['y']
+```
+
+### Create your own feature
+
+See detailed info in the [Contributor Guide](https://hdi-project.github.io/ballet/contributor_guide.html) and the [Feature Engineering
+Guide](https://hdi-project.github.io/ballet/feature_engineering_guide.html).
