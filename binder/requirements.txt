@@ -1,0 +1,9 @@
+# installs ballet_predict_house_prices when run from root
+-e .
+
+# lower limit on jlab
+jupyterlab>=1.0
+
+# analysis in case user wants them
+seaborn
+matplotlib
