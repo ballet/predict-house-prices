@@ -1,11 +1,4 @@
 set -ex
 
-# install ballet-submit-labextension
-git clone --depth 1 https://github.com/HDI-Project/ballet-submit-labextension
-cd ballet-submit-labextension
-jlpm install
-jlpm run build
-jupyter labextension install
-
-# initialize workspace
+jupyter labextension install ballet-submit-labextension
 jupyter lab workspaces import binder/workspace.json
