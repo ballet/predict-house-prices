@@ -1,5 +1,5 @@
 [![ballet](https://img.shields.io/static/v1?label=built%20with&message=ballet&color=FCDD35)](https://github.com/HDI-Project/ballet)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/HDI-Project/ballet-predict-house-prices/master?urlpath=lab)
+<a href="https://mybinder.org/v2/gh/HDI-Project/ballet-predict-house-prices/master?urlpath=lab" target="_blank" rel="nofollow"><img src="https://mybinder.org/badge_logo.svg" style="max-width:100%;"></a>
 
 # Predict House Prices
 
