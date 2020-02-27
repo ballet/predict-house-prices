@@ -19,9 +19,12 @@ only features that provide an information gain above some threshold, and to
 prune older features that have been made redundant by newer ones.)
 
 - Read the [Ballet Contributor Guide](https://hdi-project.github.io/ballet/contributor_guide.html)
+- Read the [Ballet Feature Engineering Guide](https://hdi-project.github.io/ballet/feature_engineering_guide.html)
 - Browse the currently accepted features in the contributed features
     directory (`src/ballet_predict_house_prices/features/contrib`)
 - Look at example features (`examples/`)
+- Launch the Binder to load this repository into an interactive Jupyter Lab
+  session.
 
 ## Quickstart
 
