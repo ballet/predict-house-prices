@@ -8,8 +8,8 @@ from ballet_predict_house_prices.features import build
 
 def train(X_df, y_df):
     out = build(X_df, y_df)
-    feature_pipeline = out['mapper_X']
-    target_encoder = out['encoder_y']
+    feature_pipeline = out.mapper_X
+    target_encoder = out.encoder_y
     model = LinearRegression()
     pipeline = Pipeline([('feature_engineering_pipeline', feature_pipeline),
                          ('linear_regression', model)])

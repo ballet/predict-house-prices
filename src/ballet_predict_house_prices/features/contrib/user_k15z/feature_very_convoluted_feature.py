@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
     X_df, y_df = load_data()
     out = build(X_df, y_df)
-    X_df, y, features = out['X_df'], out['y'], out['features']
+    X_df, y, features = out.X_df, out.y, out.features
 
     project = Project.from_path(".")
     Accepter = _load_class(project, 'validation.feature_accepter')

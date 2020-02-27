@@ -75,7 +75,7 @@ engineering pipeline:
 ```python
 from ballet_predict_house_prices.features import build
 result = build(X_df, y_df)
-X_train, y_train = result['X'], result['y']
+X_train, y_train = result.X, result.y
 ```
 
 ### Create your own feature
