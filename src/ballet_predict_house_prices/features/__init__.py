@@ -1,12 +1,14 @@
+import collections
 import logging
 
 import ballet
 import ballet.contrib
 import ballet.util.mod
 import click
-from ballet.eng.misc import IdentityTransformer
+import numpy as np
 from ballet.pipeline import FeatureEngineeringPipeline
 from ballet.util.io import save_features, save_targets
+from sklearn.preprocessing import FunctionTransformer
 from stacklog import stacklog
 
 import ballet_predict_house_prices
@@ -31,7 +33,7 @@ def get_target_encoder():
     Returns:
         transformer-like
     """
-    return IdentityTransformer()
+    return FunctionTransformer(func=np.log, inverse_func=np.exp)
 
 
 BuildResult = collections.namedtuple(
