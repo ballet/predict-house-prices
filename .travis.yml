@@ -25,4 +25,5 @@ install:
 
 script:
   - printenv | grep TRAVIS | sort
+  - pip freeze | sort
   - ballet validate
