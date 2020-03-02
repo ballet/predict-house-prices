@@ -36,10 +36,6 @@ def get_target_encoder():
     return FunctionTransformer(func=np.log, inverse_func=np.exp)
 
 
-BuildResult = collections.namedtuple(
-    'BuildResult',
-    ['X_df', 'features', 'mapper_X', 'X', 'y_df', 'encoder_y', 'y'])
-
 @stacklog(logger.info, 'Building features and target')
 def build(X_df=None, y_df=None):
     """Build features and target
