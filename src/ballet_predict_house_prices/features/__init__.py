@@ -6,7 +6,7 @@ import ballet.contrib
 import ballet.util.mod
 import click
 import numpy as np
-from ballet.pipeline import FeatureEngineeringPipeline
+from ballet.pipeline import BuildResult, FeatureEngineeringPipeline
 from ballet.util.io import save_features, save_targets
 from sklearn.preprocessing import FunctionTransformer
 from stacklog import stacklog
