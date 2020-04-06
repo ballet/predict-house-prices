@@ -1,8 +1,11 @@
-# installs ballet_predict_house_prices when run from root
+# installs ballet_predict_house_prices when run from root directory
 -e .
 
 # lower limit on jlab
-jupyterlab>=1.0
+jupyterlab >= 2.0
+
+# lab extension
+ballet-submit-labextension ~= 0.5.0
 
 # analysis in case user wants them
 seaborn
