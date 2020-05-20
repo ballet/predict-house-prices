@@ -5,7 +5,7 @@
 jupyterlab >= 2.0
 
 # lab extension
-ballet-submit-labextension ~= 0.5.0
+ballet-submit-labextension ~= 0.6.0
 
 # analysis in case user wants them
 seaborn

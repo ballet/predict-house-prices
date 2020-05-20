@@ -2,8 +2,5 @@
 
 set -ex
 
-mkdir -p $(jupyter --config-dir)
-cat binder/jupyter_notebook_config.py >> $(jupyter --config-dir)/jupyter_notebook_config.py
-
 jupyter lab build
 jupyter lab workspaces import binder/workspace.json
