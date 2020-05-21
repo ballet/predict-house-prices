@@ -21,10 +21,11 @@ prune older features that have been made redundant by newer ones.)
 - Read the [Ballet Contributor Guide](https://hdi-project.github.io/ballet/contributor_guide.html)
 - Read the [Ballet Feature Engineering Guide](https://hdi-project.github.io/ballet/feature_engineering_guide.html)
 - Browse the currently accepted features in the contributed features
-    directory (`src/ballet_predict_house_prices/features/contrib`)
-- Look at example features (`examples/`)
-- Launch the Binder to load this repository into an interactive Jupyter Lab
-  session.
+    directory ([`src/ballet_predict_house_prices/features/contrib`](src/ballet_predict_house_prices/features/contrib))
+- Look at example features ([`examples/`](examples/))
+- Launch an interactive Jupyter Lab session to hack on this repository:
+    <a href="https://mybinder.org/v2/gh/HDI-Project/ballet-predict-house-prices/master?urlpath=lab" target="_blank" rel="nofollow" ><img src="https://mybinder.org/badge_logo.svg" style="max-width:100%;"></a>
+
 
 ## Quickstart
 
@@ -90,6 +91,6 @@ Here are some hints on coming up with ideas for new features
    variables that when transformed appropriately have high predictive power 
    to the target (house selling price).
 1. Look at example features that are provided alongside the project 
-   (`examples/`).
+   ([`examples/`](examples/)).
 1. Look at notebooks that Kagglers have created for this same problem
    (https://www.kaggle.com/c/house-prices-advanced-regression-techniques/notebooks).
