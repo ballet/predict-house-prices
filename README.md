@@ -1,5 +1,5 @@
 [![ballet](https://img.shields.io/static/v1?label=built%20with&message=ballet&color=FCDD35)](https://github.com/HDI-Project/ballet)
-[![project chat](https://img.shields.io/badge/zulip-join_chat-brightgreen.svg)](https://ballet.zulipchat.com/join/mfqufz3ww1bwhnju1pk2czz5)
+[![project chat](https://badges.gitter.im/ballet-project/community.svg)](https://gitter.im/ballet-project/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 <a href="https://mybinder.org/v2/gh/HDI-Project/ballet-predict-house-prices/master?urlpath=lab" target="_blank" rel="nofollow"><img src="https://mybinder.org/badge_logo.svg" style="max-width:100%;"></a>
 
 # Predict House Prices
