@@ -1,46 +1,45 @@
-default:
-  version: 0.6.11
-  project:
-    project_name: Predict House Prices
-    project_slug: ballet-predict-house-prices
-    package_slug: ballet_predict_house_prices
-  problem:
-    problem_type: regression
-    problem_type_details:
-      scorer: neg_mean_squared_log_error
-      classification_type: 
-  contrib:
-    module_name: ballet_predict_house_prices.features.contrib
-    module_path: src/ballet_predict_house_prices/features/contrib
-  validation:
-    project_structure_validator: ballet.validation.project_structure.validator.ProjectStructureValidator
-    feature_api_validator: ballet.validation.feature_api.validator.FeatureApiValidator
-    feature_accepter: ballet.validation.feature_acceptance.validator.GFSSFFeatureAccepter
-    feature_pruner: ballet.validation.feature_pruning.validator.GFSSFFeaturePruner
-  github:
-    github_owner: HDI-Project
-    remote: origin
-    pruning_action: commit_to_master
-    auto_merge_accepted_features: yes
-    auto_close_rejected_features: yes
-  data:
-    s3_bucket:
-    s3_bucket_region:
-    train: data/train
-    entities_table_name: entities
-    targets_table_name: targets
-    tables:
-      -
-        name: entities
-        path: entities.csv
-        pd_read_kwargs:
-          index_col: 0
-          header: 0
-          sep: ","
-      -
-        name: targets
-        path: targets.csv
-        pd_read_kwargs:
-          index_col: 0
-          header: 0
-          sep: ","
+version: 0.7.11
+project:
+  project_name: Predict House Prices
+  project_slug: ballet-predict-house-prices
+  package_slug: ballet_predict_house_prices
+problem:
+  problem_type: regression
+  problem_type_details:
+    scorer: neg_mean_squared_log_error
+    classification_type: 
+contrib:
+  module_name: ballet_predict_house_prices.features.contrib
+  module_path: src/ballet_predict_house_prices/features/contrib
+validation:
+  project_structure_validator: ballet.validation.project_structure.validator.ProjectStructureValidator
+  feature_api_validator: ballet.validation.feature_api.validator.FeatureApiValidator
+  feature_accepter: ballet.validation.feature_acceptance.validator.GFSSFAccepter
+  feature_pruner: ballet.validation.feature_pruning.validator.GFSSFPruner
+github:
+  github_owner: HDI-Project
+  remote: origin
+  pruning_action: commit_to_master
+  auto_merge_accepted_features: yes
+  auto_close_rejected_features: yes
+data:
+  s3_bucket:
+  s3_bucket_region:
+  train: data/train
+  entities_table_name: entities
+  targets_table_name: targets
+  tables:
+    -
+      name: entities
+      path: entities.csv
+      pd_read_kwargs:
+        index_col: 0
+        header: 0
+        sep: ","
+    -
+      name: targets
+      path: targets.csv
+      pd_read_kwargs:
+        index_col: 0
+        header: 0
+        sep: ","
