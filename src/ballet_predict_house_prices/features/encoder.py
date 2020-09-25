@@ -1,4 +1,5 @@
-from ballet.eng.misc import IdentityTransformer
+import numpy as np
+from sklearn.preprocessing import FunctionTransformer
 
 
 def get_target_encoder():
@@ -7,4 +8,4 @@ def get_target_encoder():
     Returns:
         transformer-like
     """
-    return IdentityTransformer()
+    return FunctionTransformer(func=np.log, inverse_func=np.exp)

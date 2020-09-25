@@ -35,8 +35,8 @@ prune older features that have been made redundant by newer ones.)
 You can load the raw data as follows:
 
 ```python
-from ballet_predict_house_prices.load_data import load_data
-X_df, y_df = load_data()
+from ballet import b  # magical client for this project
+X_df, y_df = b.api.load_data()
 ```
 
 The resulting variables are pandas DataFrames.
@@ -75,8 +75,8 @@ You can see the feature values that are extracted by the existing feature
 engineering pipeline:
 
 ```python
-from ballet_predict_house_prices.features import build
-result = build(X_df, y_df)
+from ballet import b  # magical client for this project
+result = b.api.engineer_features(X_df, y_df)
 X_train, y_train = result.X, result.y
 ```
 
