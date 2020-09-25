@@ -2,5 +2,5 @@
 
 set -ex
 
-jupyter lab build
+jupyter lab build --dev-build=False --minimize=False
 jupyter lab workspaces import binder/workspace.json
