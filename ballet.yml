@@ -1,4 +1,4 @@
-version: 0.6.11
+version: 0.7.11
 project:
   project_name: Predict House Prices
   project_slug: ballet-predict-house-prices
@@ -7,7 +7,7 @@ problem:
   problem_type: regression
   problem_type_details:
     scorer: neg_mean_squared_log_error
-    classification_type: 
+    classification_type:
 contrib:
   module_name: ballet_predict_house_prices.features.contrib
   module_path: src/ballet_predict_house_prices/features/contrib

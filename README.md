@@ -87,11 +87,11 @@ Guide](https://hdi-project.github.io/ballet/feature_engineering_guide.html).
 
 Here are some hints on coming up with ideas for new features
 
-1. Treat it like a real data science process, and through exploratory 
-   analysis and your own intuition, try to find variables or combinations of 
-   variables that when transformed appropriately have high predictive power 
+1. Treat it like a real data science process, and through exploratory
+   analysis and your own intuition, try to find variables or combinations of
+   variables that when transformed appropriately have high predictive power
    to the target (house selling price).
-1. Look at example features that are provided alongside the project 
+1. Look at example features that are provided alongside the project
    ([`examples/`](examples/)).
 1. Look at notebooks that Kagglers have created for this same problem
    (https://www.kaggle.com/c/house-prices-advanced-regression-techniques/notebooks).

@@ -5,8 +5,7 @@
 jupyterlab >= 2.0
 
 # lab extension
-ballet-submit-labextension ~= 0.6.0
+ballet-submit-labextension ~= 0.6
 
-# analysis in case user wants them
-seaborn
-matplotlib
+# additional user requirements
+-r requirements-notebook.txt

@@ -9,6 +9,7 @@ from ballet.util.io import load_table_from_config
 from sklearn.model_selection import train_test_split
 
 
+
 def load_data(input_dir=None):
     """Loads the Ames Housing dataset
 
