@@ -2,5 +2,9 @@
 
 set -ex
 
+# TODO differentiate two github icons
+jupyter serverextension disable --py jupyter_offlinenotebook --sys-prefix
+jupyter nbextension disable --py jupyter_offlinenotebook --sys-prefix
+
 jupyter lab build --dev-build=False --minimize=False
 jupyter lab workspaces import binder/workspace.json
