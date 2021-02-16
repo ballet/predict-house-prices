@@ -1,5 +1,5 @@
 [![ballet](https://img.shields.io/static/v1?label=built%20with&message=ballet&color=FCDD35)](https://github.com/HDI-Project/ballet)
-<a href="https://mybinder.org/v2/gh/HDI-Project/ballet-predict-house-prices/master?urlpath=lab" target="_blank" rel="nofollow"><img src="https://mybinder.org/badge_logo.svg" style="max-width:100%;"></a>
+<a href="https://mybinder.org/v2/gh/HDI-Project/ballet-predict-house-prices/master?urlpath=lab" target="_blank" rel="nofollow"><img src="https://hdi-project.github.io/ballet/_static/launch-assemble.svg" style="max-width:100%;"></a>
 
 # Predict House Prices
 
@@ -14,4 +14,4 @@ Are you interested in joining the collaboration?
 - Browse the currently accepted features in the contributed features
     directory ([`src/ballet_predict_house_prices/features/contrib`](src/ballet_predict_house_prices/features/contrib))
 - Launch an interactive Jupyter Lab session to hack on this repository:
-    <a href="https://mybinder.org/v2/gh/HDI-Project/ballet-predict-house-prices/master?urlpath=lab" target="_blank" rel="nofollow" ><img src="https://mybinder.org/badge_logo.svg" style="max-width:100%;"></a>
+    <a href="https://mybinder.org/v2/gh/HDI-Project/ballet-predict-house-prices/master?urlpath=lab" target="_blank" rel="nofollow" ><img src="https://hdi-project.github.io/ballet/_static/launch-assemble.svg" style="max-width:100%;"></a>

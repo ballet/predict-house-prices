@@ -1,4 +1,4 @@
-version: 0.7.11
+version: 0.8.1
 project:
   project_name: Predict House Prices
   project_slug: ballet-predict-house-prices
