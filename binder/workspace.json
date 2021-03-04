@@ -6,8 +6,8 @@
                     "type": "split-area",
                     "orientation": "horizontal",
                     "sizes": [
-                        0.5,
-                        0.5
+                        0.6,
+                        0.4
                     ],
                     "children": [
                         {

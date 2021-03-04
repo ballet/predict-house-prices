@@ -3,7 +3,7 @@ import pathlib
 import pandas as pd
 import funcy as fy
 
-from ballet.project import config
+from ballet.project import load_config
 from ballet.util import one_or_raise
 from ballet.util.io import load_table_from_config
 from sklearn.model_selection import train_test_split
@@ -21,6 +21,7 @@ def load_data(input_dir=None):
         <https://s3.amazonaws.com/mit-dai-ballet/ames/DataDocumentation.txt >
     """
     if input_dir is not None:
+        config = load_config()
         tables = config.get('data.tables')
 
         entities_table_name = config.get('data.entities_table_name')
@@ -55,6 +56,7 @@ def make_train_test_split(output_dir, seed=641137):
     y_te_df = y.loc[inds_te]
 
     # load config
+    config = load_config()
     tables = config.get('data.tables')
     entities_table_name = config.get('data.entities_table_name')
     entities_config = one_or_raise(
