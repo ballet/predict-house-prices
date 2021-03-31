@@ -83,8 +83,8 @@ X_train, y_train = result.X, result.y
 
 ### Create your own feature
 
-See detailed info in the [Contributor Guide](https://hdi-project.github.io/ballet/contributor_guide.html) and the [Feature Engineering
-Guide](https://hdi-project.github.io/ballet/feature_engineering_guide.html).
+See detailed info in the [Contributor Guide](https://ballet.github.io/ballet/contributor_guide.html) and the [Feature Engineering
+Guide](https://ballet.github.io/ballet/feature_engineering_guide.html).
 
 Here are some hints on coming up with ideas for new features
 
