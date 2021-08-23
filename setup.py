@@ -15,5 +15,5 @@ setup(
     author='Micah Smith',
     author_email='micahs@mit.edu',
     description='A data science project built on the Ballet framework',
-    url='https://github.com/HDI-Project/ballet-predict-house-prices',
+    url='https://github.com/ballet/predict-house-prices',
 )

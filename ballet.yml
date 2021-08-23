@@ -1,7 +1,7 @@
 version: 0.13.0
 project:
   project_name: Predict House Prices
-  project_slug: ballet-predict-house-prices
+  project_slug: predict-house-prices
   package_slug: ballet_predict_house_prices
 problem:
   problem_type: regression
@@ -17,7 +17,7 @@ validation:
   feature_accepter: ballet.validation.feature_acceptance.validator.AlwaysAccepter
   feature_pruner: ballet.validation.feature_pruning.validator.NoOpPruner
 github:
-  github_owner: HDI-Project
+  github_owner: ballet
   remote: origin
   pruning_action: commit_to_master
   auto_merge_accepted_features: yes

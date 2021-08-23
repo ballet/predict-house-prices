@@ -1,6 +1,6 @@
 [![ballet](https://img.shields.io/static/v1?label=built%20with&message=ballet&color=FCDD35)](https://ballet.github.io)
 [![project chat](https://badges.gitter.im/ballet-project/community.svg)](https://gitter.im/ballet-project/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-<a href="https://mybinder.org/v2/gh/HDI-Project/ballet-predict-house-prices/master?urlpath=lab" target="_blank" rel="nofollow"><img src="https://ballet.github.io/ballet/_static/launch-assemble.svg" style="max-width:100%;"></a>
+<a href="https://mybinder.org/v2/gh/ballet/predict-house-prices/master?urlpath=lab" target="_blank" rel="nofollow"><img src="https://ballet.github.io/ballet/_static/launch-assemble.svg" style="max-width:100%;"></a>
 
 # Predict House Prices
 
@@ -26,7 +26,7 @@ prune older features that have been made redundant by newer ones.)
     directory ([`src/ballet_predict_house_prices/features/contrib`](src/ballet_predict_house_prices/features/contrib))
 - Look at example features ([`examples/`](examples/))
 - Launch an interactive Jupyter Lab session to hack on this repository:
-    <a href="https://mybinder.org/v2/gh/HDI-Project/ballet-predict-house-prices/master?urlpath=lab" target="_blank" rel="nofollow" ><img src="https://ballet.github.io/ballet/_static/launch-assemble.svg" style="max-width:100%;"></a>
+    <a href="https://mybinder.org/v2/gh/ballet/predict-house-prices/master?urlpath=lab" target="_blank" rel="nofollow" ><img src="https://ballet.github.io/ballet/_static/launch-assemble.svg" style="max-width:100%;"></a>
 
 
 ## Quickstart
